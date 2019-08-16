@@ -1,4 +1,8 @@
-function handleCountries(country: { name: string }) {
+enum country {
+	Afghanistan = 'Afghanistan'
+}
+
+export function handleCountry(country: { name: string }) {
   switch (country.name) {
     case "Afghanistan":
       return {
